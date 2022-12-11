@@ -1,0 +1,111 @@
+@font-face {
+    font-family: 'La Belle Aurore';
+    src: url('La_Belle_Aurore/LaBelleAurore-Regular.ttf');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'La Belle Aurore', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    color: whitesmoke;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+main {
+    width: 350px;
+    height: 450px;
+    padding: 3px;
+    border-radius: 4px;
+    background: linear-gradient(135deg, #0990ff, #11fffc);
+}
+
+.calculator-background {
+    border-radius: 3px;
+    background: black;
+    height: 100%;
+    padding: 15px 15px 15px 15px;
+}
+
+.display {
+    color: whitesmoke;
+    background: #304140;
+    height: 60px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.display p {
+    font-size: 40px;
+    line-height: 100%;
+    vertical-align: middle;
+    display: block;
+    margin-bottom: -5px;
+}
+
+.keys {
+    display: flex;
+    gap: 20px;
+}
+
+.numeric {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    gap: 10px;
+    flex: 1.8;
+}
+
+#digit-0 {
+    width: 118px;
+}
+
+.actions {
+    flex: 1;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 5px;
+    align-content: space-between;
+}
+
+.actions button {
+    height: 80px;
+}
+
+.actions button:last-child {
+    margin-top: 35px;
+    height: 60px;
+}
+
+button {
+    color: inherit;
+    height: 60px;
+    width: 50px;
+    border-radius: 3px;
+    border: 0;
+    flex-grow: 1;
+    font-size: 40px;
+    font-family: inherit;
+    text-align: center;
+    background: linear-gradient(315deg, #0990ff, #11fffc);
+}
+
+
